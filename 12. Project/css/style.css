@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #608AC4;
+    background-image: linear-gradient(to right,#608ac4,#B4C8E3,#93B0D7,#608ac4);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    padding: 0 3rem;
+}
+
+.header-all{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top{
+    display: flex; 
+    align-items: center;
+}
+
+.t-left{
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+
+.t-right{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo{
+    width: 15%;
+    margin-top: 15px;
+}
+
+.navbar{
+    width: 80%;
+}
+
+.top a {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 15px;
+}
+.bottom{
+    display: flex;
+    align-items: flex-end;
+}
+.bottom a{
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.bottom span,.ph-all .right span{
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    opacity: 0.7;
+    margin-right: 20px;
+}
+
+
+.s-all{
+    display: flex;
+}
+
+.s-all img{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.s-all h1{
+    font-size: 50px;
+}
+
+#phone-header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+.ph-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ph-all i{
+   font-size: 20px;
+   color: #fff;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.f-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.f-all .left{
+    display: flex;
+}
+
+footer .left .company{
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.company svg{
+    margin: 0 8px;
+}
+
+.f-all .f-box{
+    width: 50%;
+}
+
+.f-all .right{
+    text-align: right;
+}
+
+footer i,span{
+    color: #fff;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+
+@media (max-width:576px) {
+    header{
+        display: none;
+    }
+    #phone-header{
+        display: block;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .s-all {
+        flex-direction: column;
+    }
+    .s-all .right{
+        position: absolute;
+        z-index: -1;
+    }
+}

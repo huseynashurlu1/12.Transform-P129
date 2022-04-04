@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    animation: body 15s linear infinite;
+}
+
+
+/* h1{
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    transition: all 1s;
+    filter: blur(3px);
+}
+
+h1:hover{
+    color: orange;
+    background-color: black;
+    filter: blur(0px);
+} */
+
+/* .box:hover img{
+    border-radius: 10px;
+} */
+
+/* #demo{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+}
+
+
+.X{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+
+/* .all{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    width: 30%;
+    overflow: hidden;
+}
+
+.box img{
+    width: 100%;
+    transition: .5s;
+    vertical-align: bottom;
+    filter: grayscale(1);
+}
+
+.box:hover img{
+    filter: grayscale(0);
+    transform: scale(2) rotate(45deg);
+}
+
+.First{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    transition: 1s;
+    margin: 5rem;
+    border: 10px inset red;
+}
+
+.First:hover{
+    transform: rotateX(90deg);
+}
+
+.text{
+    background-color: burlywood;
+    width: 40%;
+    height: 200px;
+    overflow-y: scroll;
+} */
+
+/* #demo{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: p129 4s linear infinite;
+}
+
+h3{
+    color: yellow;
+}
+
+@keyframes p129 {
+    25% {
+        margin-top: 0;
+        margin-left: 200px;
+    }
+    50%{
+        margin-top: 200px;
+        margin-left: 200px;
+    }
+    75%{
+        margin-top: 200px;
+        margin-left: 0;
+    }
+    100%{
+        margin-top: 0;
+        margin-left: 0;
+    }
+} */
+
+
+/* .X{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 100%;
+    border: 10px dashed yellowgreen;
+    animation: round 2s linear infinite;
+}
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: greenyellow;
+}
+
+@keyframes round {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+.cloud{
+    position: absolute;
+    top: 20px;
+    right: -100%;
+    animation: cloud 50s linear infinite;
+    opacity: 1;
+}
+
+.sun{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    transform: translate(50%,50%);
+    animation: sun 15s linear infinite;
+    border-radius: 100%;
+}
+
+/* @keyframes cloud {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 100%;
+    }
+} */
+
+@keyframes sun {
+    0%{
+        right: 0%;
+        bottom: 0%;
+        transform: translate(50%,50%);
+    }
+    20%{
+        right: 20%;
+        bottom: 20%;
+        transform: translate(50%,50%);
+    }
+    40%{
+        right: 40%;
+        bottom: 40%;
+        transform: translate(50%,50%);
+    }
+    50%{
+        right: 50%;
+        bottom: 45%;
+        transform: translate(50%,50%);
+    }
+    60%{
+        right: 60%;
+        bottom: 40%;
+        transform: translate(50%,50%);
+    }
+    80%{
+        right: 80%;
+        bottom: 20%;
+        transform: translate(50%,50%);
+    }
+    100%{
+        right: 100%;
+        bottom: 0%;
+        transform: translate(50%,50%);
+    }
+}
+
+@keyframes body {
+    0%{
+        background-color: #000;
+    }
+    50%{
+        background-color: #fff;
+    }
+    100%{
+        background-color: #000;
+    }
+}
+
+.air{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: air 9s linear infinite;
+    z-index: 3;
+}
+
+@keyframes air{
+    from{
+        bottom: 0;
+        left: 0;
+    }
+    to{
+        bottom: 100%;
+        left: 100%;
+    }
+}
